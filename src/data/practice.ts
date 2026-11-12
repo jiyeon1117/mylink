@@ -95,8 +95,8 @@ export const practiceWeeks: PracticeWeek[] = [
     result: "Firestore 저장 · 불러오기",
     href: "/mypage/",
     items: [
-      { text: "Firebase 프로젝트 생성", kind: "env" },
-      { text: "Firestore 생성 - 테스트 모드", kind: "env" },
+      { text: "Firebase 프로젝트 생성", kind: "code", where: "mylink-project (콘솔)" },
+      { text: "Firestore 생성 - 테스트 모드", kind: "code", where: "asia-northeast3 (Seoul)" },
       { text: "Firebase SDK 설치 및 설정", kind: "code", where: "src/lib/firebase-store.ts" },
       { text: "링크 저장 기능 (Create)", kind: "code", where: "addDoc" },
       { text: "링크 불러오기 (Read)", kind: "code", where: "getDocs" },
@@ -123,7 +123,7 @@ export const practiceWeeks: PracticeWeek[] = [
     result: "구글 로그인 + 사용자별 데이터 분리",
     href: "/mypage/",
     items: [
-      { text: "Firebase 콘솔에서 구글 로그인 활성화", kind: "env" },
+      { text: "Firebase 콘솔에서 구글 로그인 활성화", kind: "code", where: "승인된 도메인 jiyeon1117.github.io" },
       { text: "AI 프롬프트로 로그인 기능 구현", kind: "code", where: "signInWithPopup" },
       { text: "헤더에 로그인/로그아웃 UI 추가", kind: "code", where: "site-header.tsx" },
       { text: "Firestore 경로 개인화 적용", kind: "code", where: "users/{uid}/links" },
@@ -138,7 +138,7 @@ export const practiceWeeks: PracticeWeek[] = [
     items: [
       { text: "마이페이지에 프로필 수정 기능 추가", kind: "code", where: "profile-editor.tsx" },
       { text: "AI 프롬프트로 /[username] 페이지 생성", kind: "code", where: "src/app/[username]" },
-      { text: "Security Rules 설정 + 테스트", kind: "code", where: "firestore.rules" },
+      { text: "Security Rules 설정 + 테스트", kind: "code", where: "firestore.rules → 콘솔에 게시" },
     ],
   },
   {

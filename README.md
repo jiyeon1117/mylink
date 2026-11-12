@@ -42,7 +42,7 @@ Next.js 15 (App Router, Static Export) · TypeScript · Tailwind CSS 4 · shadcn
 | 12 | 개인별 페이지와 보안 | ✅ 프로필 수정 · `/[username]` · [Security Rules](firestore.rules) |
 | 13 | 클릭 통계 | ✅ `increment(1)` 클릭 카운트 · 총/링크별 클릭수 통계 |
 
-> Antigravity·Gemini CLI 설치, Firebase 콘솔 설정 같은 환경 설정은 각자 PC·콘솔에서 진행하는 항목입니다.
+> Antigravity·Gemini CLI 설치 같은 개발 환경 설정은 각자 PC에서 진행하는 항목입니다.
 
 ## Firebase 연결 (완료)
 
