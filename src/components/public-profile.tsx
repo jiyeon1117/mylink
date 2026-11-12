@@ -106,9 +106,6 @@ export function PublicProfile({ username }: { username: string }) {
           <Link href="/mypage/">내 링크 관리하기 · 통계 보기</Link>
         </Button>
       )}
-      <Link href="/" className="text-xs font-bold text-muted underline underline-offset-2">
-        마이링크로 나만의 페이지 만들기
-      </Link>
     </div>
   );
 }

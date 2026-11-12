@@ -34,7 +34,7 @@ function seed(): DB {
         profile: {
           username: "jiyeon1117",
           displayName: "지연",
-          bio: "바이브 코딩으로 만든 나만의 링크 모음 🔗",
+          bio: "",
         },
         links: [
           { id: "l1", title: "GitHub", url: "https://github.com/jiyeon1117", clickCount: 12, createdAt: now - 4000 },
