@@ -44,19 +44,17 @@ Next.js 15 (App Router, Static Export) · TypeScript · Tailwind CSS 4 · shadcn
 
 > Antigravity·Gemini CLI 설치, Firebase 콘솔 설정 같은 환경 설정은 각자 PC·콘솔에서 진행하는 항목입니다.
 
-## 데이터 모드
+## Firebase 연결 (완료)
 
-- **데모 모드 (기본):** Firebase 설정값이 없으면 Firestore와 같은 구조를 브라우저 `localStorage`에 저장합니다. 헤더의 **데모 로그인**으로 바로 체험할 수 있어요.
-- **Firebase 모드:** 아래 설정을 하면 실제 구글 로그인과 Firestore를 사용합니다.
+| 항목 | 설정 |
+| --- | --- |
+| 프로젝트 | `mylink-project` (ID `mylink-project-853cf`), Analytics 사용 안 함 |
+| Firestore | Standard, 리전 `asia-northeast3 (Seoul)`, 테스트 모드로 생성 후 [`firestore.rules`](firestore.rules) 게시 |
+| Authentication | Google 로그인 사용 설정, 승인된 도메인에 `jiyeon1117.github.io` 추가 |
+| 웹 앱 | `mylink-web` — 설정값은 [`src/lib/firebase-config.ts`](src/lib/firebase-config.ts) |
 
-### Firebase 연결하기
-
-1. [Firebase 콘솔](https://console.firebase.google.com)에서 프로젝트 생성 (`mylink-project`, Analytics 사용 안 함)
-2. Firestore Database 생성 (리전 `asia-northeast3`) → 규칙 탭에 [`firestore.rules`](firestore.rules) 붙여넣기
-3. Authentication → 로그인 방법 → **Google** 사용 설정, 승인된 도메인에 `jiyeon1117.github.io` 추가
-4. 프로젝트 설정 → 웹 앱 추가 → 설정값 복사
-5. GitHub 저장소 **Settings → Secrets and variables → Actions**에 `.env.example`의 6개 값을 같은 이름으로 추가
-6. Actions 탭에서 **Deploy to GitHub Pages** 다시 실행
+> 웹 앱 설정값(apiKey 등)은 브라우저에 그대로 전달되는 공개 정보이고, 데이터 보호는 Security Rules가 담당합니다.
+> `NEXT_PUBLIC_DEMO_MODE=1`로 빌드하면 Firebase 없이 브라우저 저장소(데모 모드)로 동작합니다.
 
 ## 로컬 실행
 
