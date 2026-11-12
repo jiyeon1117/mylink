@@ -56,11 +56,11 @@ export default function Home() {
         <Card className="bg-sky">
           <CardContent className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="font-extrabold">16주 마이링크 프로젝트</p>
-              <p className="text-sm">주차별 &lsquo;직접 해보기&rsquo; 실습 결과를 확인해보세요.</p>
+              <p className="font-extrabold">4주차 실습</p>
+              <p className="text-sm">나쁜 프롬프트 vs 좋은 프롬프트 결과를 비교해보세요.</p>
             </div>
             <Button asChild variant="outline" size="sm">
-              <Link href="/practice/">학습기록 보기</Link>
+              <Link href="/prompt/">비교 보기</Link>
             </Button>
           </CardContent>
         </Card>

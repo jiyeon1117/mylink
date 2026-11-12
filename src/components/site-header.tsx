@@ -24,8 +24,8 @@ export function SiteHeader() {
           <Link href="/mypage/" className="rounded-lg px-1.5 py-1 hover:bg-black/5 sm:px-2">
             마이페이지
           </Link>
-          <Link href="/practice/" className="rounded-lg px-1.5 py-1 hover:bg-black/5 sm:px-2">
-            학습기록
+          <Link href="/prompt/" className="rounded-lg px-1.5 py-1 hover:bg-black/5 sm:px-2">
+            프롬프트 비교
           </Link>
         </nav>
 

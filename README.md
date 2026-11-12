@@ -22,8 +22,7 @@ Next.js 15 (App Router, Static Export) · TypeScript · Tailwind CSS 4 · shadcn
 | 프로필 수정 (username · displayName · bio, 중복 체크) | `/mypage` |
 | 개인 공개 페이지 + 404 | `/{username}` |
 | 링크 클릭 카운트 + 통계 섹션 | `/{username}` → `/mypage` |
-| 나쁜 vs 좋은 프롬프트 비교 | `/practice/prompt` |
-| 주차별 실습 기록 | `/practice` |
+| 나쁜 vs 좋은 프롬프트 비교 (4주차) | `/prompt` |
 
 ## 주차별 '직접 해보기' 체크리스트
 
