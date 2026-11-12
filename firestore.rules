@@ -1,0 +1,33 @@
+rules_version = '2';
+
+// 12주차: Firestore Security Rules
+// 읽기는 누구나(로그인 불필요), 쓰기는 로그인한 본인만
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/links/{linkId} {
+      allow read: if true;
+      allow create, delete: if isOwner(userId);
+      // 본인은 자유롭게 수정, 방문자는 clickCount를 +1 하는 것만 허용 (13주차 클릭 통계)
+      allow update: if isOwner(userId)
+        || (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['clickCount'])
+            && request.resource.data.clickCount == resource.data.clickCount + 1);
+    }
+
+    match /users/{userId}/profile/{docId} {
+      allow read: if true;
+      allow write: if isOwner(userId);
+    }
+
+    // username → uid 매핑 (중복 체크용)
+    match /usernames/{username} {
+      allow read: if true;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.uid == request.auth.uid;
+    }
+  }
+}
