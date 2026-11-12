@@ -22,7 +22,6 @@ Next.js 15 (App Router, Static Export) · TypeScript · Tailwind CSS 4 · shadcn
 | 프로필 수정 (username · displayName · bio, 중복 체크) | `/mypage` |
 | 개인 공개 페이지 + 404 | `/{username}` |
 | 링크 클릭 카운트 + 통계 섹션 | `/{username}` → `/mypage` |
-| 나쁜 vs 좋은 프롬프트 비교 (4주차) | `/prompt` |
 
 ## 주차별 '직접 해보기' 체크리스트
 
@@ -31,7 +30,7 @@ Next.js 15 (App Router, Static Export) · TypeScript · Tailwind CSS 4 · shadcn
 | 1 | AI 코딩 패러다임 | ✅ Next.js 프로젝트 생성 · 개발 서버 실행 |
 | 2 | Gemini CLI 환경 준비 | ✅ 프로필 페이지 (`src/app/page.tsx`) |
 | 3 | Git과 GitHub | ✅ `mylink` 저장소 생성 · 커밋 · 푸시 |
-| 4 | 효과적인 프롬프트 | ✅ 나쁜/좋은 프롬프트 비교, 네오브루탈리즘, 반응형 확인 |
+| 4 | 효과적인 프롬프트 | ✅ 좋은 프롬프트로 네오브루탈리즘 스타일링, 반응형 확인 |
 | 5 | 기획 및 명세 | ✅ [PRD](docs/PRD.md) · [사용자 시나리오](docs/user-scenario.md) · [와이어프레임](docs/wireframe.md) |
 | 6 | 링크 목록 UI | ✅ shadcn/ui 컴포넌트 · 더미 데이터(`src/data/links.ts`) · 링크 목록 |
 | 7 | 링크 추가 (Create) | ✅ `/mypage` 폼 · 입력 칸 비우기 · 빈 칸/주소 형식 검증 |

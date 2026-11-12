@@ -24,9 +24,6 @@ export function SiteHeader() {
           <Link href="/mypage/" className="rounded-lg px-1.5 py-1 hover:bg-black/5 sm:px-2">
             마이페이지
           </Link>
-          <Link href="/prompt/" className="rounded-lg px-1.5 py-1 hover:bg-black/5 sm:px-2">
-            프롬프트 비교
-          </Link>
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">

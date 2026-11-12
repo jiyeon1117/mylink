@@ -19,9 +19,6 @@ export default function Home() {
             <h1 id="profile-title" className="mt-4 text-2xl font-black sm:text-3xl">
               지연 <span className="text-primary">@jiyeon1117</span>
             </h1>
-            <p className="mt-2 max-w-xs text-sm font-medium">
-              바이브 코딩으로 만든 나만의 링크 모음 페이지예요. 링크 하나로 나를 소개해요.
-            </p>
             <div className="mt-4 flex flex-wrap justify-center gap-2">
               {["Next.js", "Firebase", "Gemini CLI", "Antigravity"].map((t) => (
                 <span key={t} className="rounded-full border-2 border-border bg-background px-3 py-0.5 text-xs font-bold">
@@ -52,18 +49,6 @@ export default function Home() {
           <span className="rounded-full border-2 border-border bg-mint px-2 text-xs font-bold">더미 데이터</span>
         </div>
         <LinkList links={dummyLinks} />
-
-        <Card className="bg-sky">
-          <CardContent className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="font-extrabold">4주차 실습</p>
-              <p className="text-sm">나쁜 프롬프트 vs 좋은 프롬프트 결과를 비교해보세요.</p>
-            </div>
-            <Button asChild variant="outline" size="sm">
-              <Link href="/prompt/">비교 보기</Link>
-            </Button>
-          </CardContent>
-        </Card>
       </section>
     </div>
   );
